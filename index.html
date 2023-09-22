@@ -7,10 +7,11 @@
     <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
     <title>Solid App</title>
   </head>
-  <body>
+  <body class="relative">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="effect"></div>
-    <div id="root"></div>
+    <div id="root" class="absolute w-full top-0 left-0"></div>
+    <div id="portal" class="fixed top-0 left-0 overflow-hidden z-10"></div>
     <script type="text/javascript">
       let pos = document.documentElement 
       pos.addEventListener('mousemove', e => {

@@ -1,13 +1,14 @@
 import type { Component } from 'solid-js';
 import github from "./assets/github-mark-white.png";
-import codegif from "./assets/code.gif";
+import codegif from "./assets/spcode.png";
 import riesgos3 from "./assets/riesgos3.png";
 import game from "./assets/game.gif"
+import Card from './components/card';
 
 const App: Component = () => {
   return (
-    <div class="flex flex-col justify-center text-white">
-      <nav class='w-full flex justify-end p-2'>
+    <div class="flex flex-col justify-center text-white overflow-auto">
+      <nav class='w-full flex justify-end p-2 fixed top-0'>
         <ul class='flex gap-4 pr-10'>
           <li class='opacity-70'>Home</li>
           <li class='opacity-70'>Projects</li>
@@ -133,44 +134,27 @@ const App: Component = () => {
               </div>
             
               <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center'>
-                + anything else needed for the job
+                + anything else needed for the project 
               </div>
             </div>
 
           </div>
 
-          <div class="mt-20 w-full flex flex-col text-center">
-            <h2 class='mt-2 font-bold mb-6 opacity-70 text-3xl'>Projects</h2>
-            <div class='w-full flex flex-wrap'>
-              <h3 class='my-2 font-bold mb-6 opacity-70 text-2xl w-full text-center'>Spaced Repetition for code</h3>
-              <div>
-                <img src={codegif}></img>
-              </div>
-
-              <div class='mt-6 text-left'>
-                <p class='opacity-70 mb-2'>A desktop application inspired by spaced repetition software like Anki that was designed specifically for coders, it ensures you never forget essential snippets like centering a div or the syntax of a new programming language.</p>
-                <p class='opacity-70 mb-2'>It includes syntax highlighting for the most popular programing languages, vim keybindings and an algorithm to schedule reviews.</p>
-                <p class='opacity-70 mb-2'>The application was build with React, Typescript, SQLite and bundled as a Windows application with Tauri, a Rust based alternative to Electron. It's still a work in progress, but I use it every day.</p>
-              </div>
-              
-              <h3 class='my-2 mt-20 font-bold mb-6 opacity-70 text-2xl w-full text-center'>Risk management</h3>
-              <img class='mb-2' src={riesgos3}></img>
-
-              <div class='mt-6 text-left'>
-                <p class='opacity-70 mb-2'>For my graduation project, I created a comprehensive risk management system tailored for a local government entity in my country. Originally developed using Java and Spring Boot, I made the deliberate choice to rebuild the system entirely. This time, I opted for a technology stack centered around the Next.js framework, complemented by TailwindCSS for styling, MySQL for the database, and the Prisma ORM for enhanced data management.</p>
-                <p class='opacity-70 mb-2'>By transitioning to this stack, I unlocked the capacity to introduce a host of new features, all while significantly elevating the overall developer experience.</p>
-              </div>
-
-              <h3 class='my-2 mt-20 font-bold mb-6 opacity-70 text-2xl w-full text-center'>Game Developtment</h3>
-              <img class='mb-2 mx-auto' src={game}></img>
-
-              <div class='mt-6 text-left'>
-                <p class='opacity-70 mb-2'>While I don't have intentions of pursuing a career as a game developer, engaging in video game programming has proven to be an enjoyable and instructive endeavor. It has not only facilitated the reinforcement of essential programming principles but also afforded me the opportunity to take part in a Game Jam event.</p>
-              </div>
-
-
-           </div>
-          </div>
+          <section class='mt-20'>
+            <h2 class='my-2 text-center font-bold text-2xl opacity-70'>Projects</h2>
+            <div class="flex flex-wrap flex-row justify-center w-fulltext-center">
+              <Card background={codegif}>
+                <h2 class='font-bold text-white text-2xl'>Risk management system</h2>
+                <img src={codegif} width={"800px"} class='my-4 object-cover'></img>
+                <div class='text-white mx-4'>
+                  <p class='opacity-70 mb-2'>A desktop application inspired by spaced repetition software like Anki that was designed specifically for coders, it ensures you never forget essential snippets like centering a div or the syntax of a new programming language.</p>
+                  <p class='opacity-70 mb-2'>It includes syntax highlighting for the most popular programing languages, vim keybindings and an algorithm to schedule reviews.</p>
+                  <p class='opacity-70 mb-2'>The application was build with React, Typescript, SQLite and bundled as a Windows application with Tauri, a Rust based alternative to Electron. It's still a work in progress, but I use it every day.</p>
+                </div>
+             </Card>
+              <Card background={riesgos3}/>
+            </div>
+          </section>
         </div>
       </div>
     </div>

@@ -17,6 +17,9 @@ code {
     monospace;
 }
 
+.bg-custom {
+  background-color: rgb(33, 38, 48);
+}
 #effect {
   position: fixed;
   top: 0;
@@ -28,6 +31,18 @@ code {
   z-index: -1;
 }
 
+.pop {
+  transition: 0.1s;
+  transform: translateY(5px);
+  &:hover {
+    transform: translateY(1px);
+    box-shadow: 0 4px  rgb(139, 135, 115);
+  }
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px  rgb(139, 135, 115);
+  }
+}
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
@@ -35,7 +50,7 @@ code {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(21,25,32);
+  background: rgba(21, 25, 32, 0);
 }
  
 /* Handle */
