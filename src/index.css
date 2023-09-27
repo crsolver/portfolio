@@ -10,6 +10,11 @@ body {
   font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1c1f2b;
+background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 code {
@@ -20,6 +25,7 @@ code {
 .bg-custom {
   background-color: rgb(33, 38, 48);
 }
+
 #effect {
   position: fixed;
   top: 0;
@@ -27,7 +33,7 @@ code {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: radial-gradient(circle at var(--x) var(--y), rgba(69, 72, 107, 0.15) 30%,  rgb(21, 25, 32) 60%);
+  background: radial-gradient(circle at var(--x) var(--y),rgba(28, 35, 44, 0.73) 30%,   rgba(24, 29, 37, 0.898) 60%);
   z-index: -1;
 }
 
@@ -36,11 +42,11 @@ code {
   transform: translateY(5px);
   &:hover {
     transform: translateY(1px);
-    box-shadow: 0 4px  rgb(139, 135, 115);
+    box-shadow: 0 4px  rgb(187,181,153);
   }
   &:active {
     transform: translateY(4px);
-    box-shadow: 0 1px  rgb(139, 135, 115);
+    box-shadow: 0 1px  rgb(187,181,153);
   }
 }
 /* width */
