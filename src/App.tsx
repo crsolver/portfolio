@@ -1,7 +1,17 @@
 import type { Component } from 'solid-js';
 import github from "./assets/github-mark-white.png";
-import codegif from "./assets/spcode.png";
+import spCodeImg1 from "./assets/spcode.png";
+import spCodeImg2 from "./assets/spcode2.png";
+import spCodeImg3 from "./assets/spcode3.png";
+import riesgosDashboard from "./assets/riesgosDashboard.png";
+import riesgos1 from "./assets/riesgos1.png";
+import riesgos2 from "./assets/riesgos2.png";
 import riesgos3 from "./assets/riesgos3.png";
+import riesgos4 from "./assets/riesgos4.png";
+import anki1 from "./assets/ankiaddon1.png";
+import anki2 from "./assets/ankiaddon2.png";
+import recli1 from "./assets/recli1.png"
+import recli2 from "./assets/recli2.png"
 import game from "./assets/game.gif"
 import Card from './components/card';
 
@@ -39,7 +49,7 @@ const App: Component = () => {
             </a>
           </div>
 
-          <div class="mt-40 w-full flex flex-col text-center">
+          <div class="mt-20 w-full flex flex-col text-center">
             <h2 class='my-2 font-bold text-2xl mb-6 opacity-70'>Programming Languages</h2>
             <div class='opacity-70 flex flex-wrap justify-center gap-2 font-bold select-none'>
               <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
@@ -144,17 +154,55 @@ const App: Component = () => {
             <h2 class='my-2 text-center font-bold text-2xl opacity-70'>Projects</h2>
             <div class="flex flex-wrap flex-row justify-center w-fulltext-center">
               <Card 
-                background={codegif} 
-                title='Risk Management'
-                text='Risk management system build in Next.js'
-              />
+                images={[spCodeImg1, spCodeImg2, spCodeImg3]} 
+                title='Spaced Repetition for Code'
+                tags={['TypeScript', 'Rust', 'Tauri', 'SQLite']}
+              >
+                <div class='mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>A desktop application inspired by spaced repetition software like Anki that was designed specifically for coders, it ensures you never forget essential snippets like centering a div or the syntax of a new programming language.</p>
+                  <p class='opacity-70 mb-2'>It includes syntax highlighting for the most popular programing languages, vim keybindings and an algorithm to schedule reviews.</p>
+                  <p class='opacity-70 mb-2'>The application was build with React, Typescript, SQLite and bundled as a Windows application with Tauri, a Rust based alternative to Electron. It's still a work in progress, but I use it every day.</p>
+                </div>
+              </Card>
               <Card 
-                background={riesgos3} 
+                images={[riesgosDashboard, riesgos1, riesgos2, riesgos3, riesgos4]} 
                 title='Risk Management'
-                text='Risk management system build in Next.js'
-              />
+                tags={['Next.js', 'TypeScript', 'PostgreSQL', 'MySQL', 'React']}
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>For my graduation project, I created a comprehensive risk management system tailored for a local government entity in my country. Originally developed using Java and Spring Boot, I made the deliberate choice to rebuild the system entirely. This time, I opted for a technology stack centered around the Next.js framework, complemented by TailwindCSS for styling, MySQL for the database, and the Prisma ORM for enhanced data management.</p>
+                  <p class='opacity-70 mb-2'>By transitioning to this stack, I unlocked the capacity to introduce a lot of new features, all while significantly elevating the overall user and developer experience.</p>
+                </div>
+              </Card>
+            
+              <Card 
+                images={[anki1, anki2]} 
+                title='Anki Addon'
+                tags={['Python', 'JavaScript']}
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>Anki is a useful spaced repetition software for language learning. I have created a helpful add-on for it that introduces word and sentence reconstruction exercises similar to Duolingo.</p>
+                </div>
+              </Card>
+
+              <Card 
+                images={[recli1, recli2]} 
+                title='recli'
+                tags={['Rust', 'SQLite']}
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                </div>
+              </Card>
+
+
             </div>
           </section>
+
+          <div class='mt-20 flex justify-center opacity-50'>
+            <img src="https://ghchart.rshah.org/1F252C/andresgamboaa" alt="2016rshah's Blue Github Chart" />
+          </div>
+
         </div>
       </div>
     </div>

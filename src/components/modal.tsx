@@ -16,16 +16,16 @@ const Modal: Component<{children: JSXElement, isOpen: boolean}> = (props) => {
                     <Motion.div class="relative top-0 left-0 w-screen h-screen z-10"
                         initial={{ opacity: 0, transform: "translateY(150px)" }}
                         animate={{ opacity: 1,  transform: "translateY(0px)" }}
-                        exit={{ opacity: 0, transform: "translateY(150px)" }}
-                        transition={{ duration: 0.16, easing: "ease" }}                        
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2}}                        
                     >
                         <div class="absolute w-full h-full flex justify-center">
                             <div class=" w-full max-w-[900px] h-full p-10 z-20">
-                                <Motion.div 
+                                <div 
                                     class="w-full h-full bg-custom rounded-md shadow-lg shadow-black"
                                 >
                                     {children(() => props.children)()}
-                                </Motion.div>
+                                </div>
                             </div>
                         </div>
                     </Motion.div>
