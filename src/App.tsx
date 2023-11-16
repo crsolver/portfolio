@@ -12,7 +12,14 @@ import anki1 from "./assets/ankiaddon1.png";
 import anki2 from "./assets/ankiaddon2.png";
 import recli1 from "./assets/recli1.png"
 import recli2 from "./assets/recli2.png"
-import game from "./assets/game.gif"
+import lingomark1 from "./assets/lingomark1.png"
+import lingomark2 from "./assets/lingomark2.png"
+import reader1 from "./assets/reader1.png"
+import reader2 from "./assets/reader2.png"
+import reader3 from "./assets/reader3.png"
+import portfolio from "./assets/portfolio.png"
+import goduz from "./assets/goduz.png"
+import web from "./assets/web.png"
 import Card from './components/card';
 
 const App: Component = () => {
@@ -49,7 +56,7 @@ const App: Component = () => {
             </a>
           </div>
 
-          <div class="mt-20 w-full flex flex-col text-center">
+          <div class="mt-40 w-full flex flex-col text-center">
             <h2 class='my-2 font-bold text-2xl mb-6 opacity-70'>Programming Languages</h2>
             <div class='opacity-70 flex flex-wrap justify-center gap-2 font-bold select-none'>
               <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
@@ -150,7 +157,7 @@ const App: Component = () => {
 
           </div>
 
-          <section class='mt-20'>
+          <section class='my-20'>
             <h2 class='my-2 text-center font-bold text-2xl opacity-70'>Projects</h2>
             <div class="flex flex-wrap flex-row justify-center w-fulltext-center">
               <Card 
@@ -164,6 +171,7 @@ const App: Component = () => {
                   <p class='opacity-70 mb-2'>The application was build with React, Typescript, SQLite and bundled as a Windows application with Tauri, a Rust based alternative to Electron. It's still a work in progress, but I use it every day.</p>
                 </div>
               </Card>
+
               <Card 
                 images={[riesgosDashboard, riesgos1, riesgos2, riesgos3, riesgos4]} 
                 title='Risk Management'
@@ -195,11 +203,68 @@ const App: Component = () => {
                 </div>
               </Card>
 
+              <Card 
+                images={[lingomark1, lingomark2]} 
+                title='LingoMark'
+                tags={['Rust', 'TypeScript', 'Tauri', 'SQLite']}
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                </div>
+              </Card>
+
+              <Card 
+                images={[reader1, reader2, reader3]} 
+                title='Reader'
+                tags={['Rust', 'TypeScript', 'Tauri', 'SQLite', 'OpenAI API']}
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                </div>
+              </Card>
+
+              <Card 
+                images={[goduz]} 
+                title='Goduz'
+                tags={['GDScript']}
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                </div>
+              </Card>
+
+              <Card 
+                images={[portfolio]} 
+                title='Portfolio'
+                tags={['TypeScript', 'Solid.js']}
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                </div>
+              </Card>
+
+              <Card 
+                images={[web]} 
+                title='Landing Page'
+                tags={['TypeScript', 'Solid.js']}
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                </div>
+              </Card>
 
             </div>
           </section>
 
-          <div class='mt-20 flex justify-center opacity-50'>
+          <div class='my-20 text-center'>
+            <h2 class='my-2 mb-6 text-center font-bold text-2xl opacity-70'>Education</h2>
+            <img class='mx-auto mb-2' width={60} src="https://www.uned.ac.cr/themes/uned/img/uned_logo_header.svg"></img>
+            <p>Bachillerato en Ingeniería Informática</p>
+            <div class='flex justify-center'><p>Universidad Estatal a Distancia</p></div>
+            <p>Costa Rica, 2023</p>
+          </div>
+
+          <div class='mt-19 flex justify-center opacity-50'>
             <img src="https://ghchart.rshah.org/1F252C/andresgamboaa" alt="2016rshah's Blue Github Chart" />
           </div>
 

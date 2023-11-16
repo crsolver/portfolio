@@ -43,10 +43,10 @@ const Card: Component<{
                                         </For>
                                     </Slider>
                                     <Show when={props.images.length>1}>
-                                            <div class="absolute top-0 left-0 h-full w-40 text-2xl font-bold text-white flex justify-center items-center"><div>{"<"}</div></div>
-                                            <div class="absolute top-0 right-0 h-full w-40 text-2xl font-bold text-white flex justify-center items-center"><div>{">"}</div></div>
-                                            <SliderButton class="absolute top-0 left-0 h-full w-40 text-2xl font-bold transition-all duration-200 text-white bg-gradient-to-r to-transparent from-[#212630] opacity-0 hover:opacity-100" prev>{"<"}</SliderButton>
-                                            <SliderButton class="absolute top-0 right-0 h-full w-40 text-2xl font-bold transition-all duration-200 text-white bg-gradient-to-r from-transparent to-[#212630] opacity-0 hover:opacity-100" next>{">"}</SliderButton>
+                                        <div class="absolute top-0 left-0 h-full w-40 text-2xl font-bold text-white flex justify-center items-center"><div>{"<"}</div></div>
+                                        <div class="absolute top-0 right-0 h-full w-40 text-2xl font-bold text-white flex justify-center items-center"><div>{">"}</div></div>
+                                        <SliderButton class="absolute top-0 left-0 h-full w-40 text-2xl font-bold transition-all duration-200 text-white bg-gradient-to-r to-transparent from-[#212630] opacity-0 hover:opacity-100" prev>{"<"}</SliderButton>
+                                        <SliderButton class="absolute top-0 right-0 h-full w-40 text-2xl font-bold transition-all duration-200 text-white bg-gradient-to-r from-transparent to-[#212630] opacity-0 hover:opacity-100" next>{">"}</SliderButton>
                                     </Show>
                                 </SliderProvider>
                             </div>

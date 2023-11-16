@@ -1,6 +1,6 @@
 import { Motion, Presence } from "@motionone/solid";
-import { Component, JSXElement, Show, children, createEffect, onCleanup } from "solid-js";
-import { Portal, effect } from "solid-js/web";
+import { Component, JSXElement, Show, children, createEffect } from "solid-js";
+import { Portal } from "solid-js/web";
 
 
 const Modal: Component<{children: JSXElement, isOpen: boolean}> = (props) => {
