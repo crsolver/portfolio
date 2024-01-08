@@ -14,7 +14,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: '/my-porfolio-webside/',
+  base: '/my-portfolio-webside/',
   build: {
     target: 'esnext',
   },
