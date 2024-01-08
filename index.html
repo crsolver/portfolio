@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" type="image/ico" href="/assets/favicon-0e726a38.ico" />
+    <title>Solid App</title>
+    <script type="module" crossorigin src="/assets/index-a5b7e1bb.js"></script>
+    <link rel="stylesheet" href="/assets/index-30f0c7c6.css">
+  </head>
+  <body class="relative">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="effect"></div>
+    <div id="root" class="absolute w-full top-0 left-0"></div>
+    <div id="portal" class="fixed top-0 left-0 overflow-hidden z-10"></div>
+    <script type="text/javascript">
+      let pos = document.documentElement 
+      pos.addEventListener('mousemove', e => {
+        pos.style.setProperty('--x', e.clientX + 'px')
+        pos.style.setProperty('--y', e.clientY + 'px')
+      })
+    </script>
+    
+  </body>
+</html>
