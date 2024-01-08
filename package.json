@@ -2,7 +2,7 @@
   "name": "vite-template-solid",
   "version": "0.0.0",
   "description": "",
-  "homepage": "http://andresgamboaa.github.io/my-portfolio-website",
+  "homepage": "http://andresgamboaa.github.io/my-portfolio-webside",
   "scripts": {
     "start": "vite",
     "dev": "vite",
