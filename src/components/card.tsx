@@ -2,11 +2,14 @@ import { Component, For, JSXElement, Show, children, createSignal } from "solid-
 import Modal from "./modal";
 import { Slider, SliderButton, SliderProvider, createSlider } from "solid-slider";
 import "solid-slider/slider.css";
-
+import githubImg from '../assets/github.svg';
+import visitImg from '../assets/visit.svg';
 
 const Card: Component<{
     images: [string, ...string[]], 
     title: string,
+    code?: string,
+    visit?: string,
     tags?: string[],
     children: JSXElement
 }> = (props) => {
@@ -35,7 +38,7 @@ const Card: Component<{
                             >x</button>
                         </div>
                         <div class="flex flex-col w-full h-full items-center overflow-auto">
-                            <div class="w-full relative h-fit">
+                            <div class="w-full relative h-fit p-4 pt-0">
                                 <SliderProvider>
                                     <Slider options={{loop: true}}>
                                         <For each={props.images}>
@@ -51,11 +54,28 @@ const Card: Component<{
                                 </SliderProvider>
                             </div>
                             { props.tags && (
-                                <div class="flex w-full justify-start gap-2 p-2">
-                                    <For each={props.tags}>
-                                        {(tag, i) => <div class=' font-bold rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center'>{tag}</div>}
-                                    </For>
-                                </div>
+                                <div class="flex w-full justify-between p-2 px-4">
+                                    <div class="flex justify-start gap-2 h-fit">
+                                        <For each={props.tags}>
+                                            {(tag, i) => <div class=' font-bold rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center'>{tag}</div>}
+                                        </For>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        { props.visit && 
+                                            <a href={props.visit} target="_blank" class='flex justify-center gap-1 whitespace-nowrap cursor-pointer text-white rounded-md bg-red-600 p-2 py-1'>
+                                                <img src={visitImg} width={20}></img>
+                                                visit
+                                            </a>
+                                        }
+                                        { props.code && 
+                                            <a href={props.code} target="_blank" class='flex gap-2 whitespace-nowrap cursor-pointer text-white rounded-md bg-blue-600 p-2 py-1'>
+                                                <img src={githubImg} width={20}></img>
+                                                View Code
+                                            </a>
+                                        }
+ 
+                                    </div>
+                               </div>
                             )}
                             <div class='text-white mx-4'>
                                 {children(() => props.children)()}
