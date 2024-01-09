@@ -157,6 +157,9 @@ const App: Component = () => {
                 Hibernate
               </div>
 
+              <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
+                Thymeleaf
+              </div>
 
               <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
                 ASP.NET Core
@@ -164,6 +167,14 @@ const App: Component = () => {
 
               <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
                 Entity Framework
+              </div>
+
+              <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
+                SignalR
+              </div>
+
+              <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
+                Razor
               </div>
 
               <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
@@ -190,7 +201,6 @@ const App: Component = () => {
                 Windows 
               </div>
 
-
               <div class='rounded-md text-sm min-w-[90px] p-1 bg-amber-100 text-black flex items-center justify-center pop'>
                 Linux/bash
               </div>
@@ -205,7 +215,7 @@ const App: Component = () => {
               <Card
                 images={[spCodeImg1, spCodeImg2, spCodeImg3]}
                 title='Spaced Repetition for Code'
-                tags={['TypeScript', 'Rust', 'Tauri', 'SQLite']}
+                tags={['React', 'TypeScript', 'Rust', 'Tauri', 'SQLite']}
                 code='https://github.com/andresgamboaa/spaced-repetition-for-code'
               >
                 <div class='mb-6 text-left'>
@@ -218,11 +228,11 @@ const App: Component = () => {
               <Card
                 images={[riesgosDashboard, riesgos1, riesgos2, riesgos3, riesgos4]}
                 title='Risk Management'
-                tags={['Next.js', 'TypeScript', 'PostgreSQL', 'React']}
+                tags={['Next.js', 'TypeScript', 'PostgreSQL']}
                 visit='https://risk-management-seven.vercel.app/dashboard'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>For my graduation project, I created a comprehensive risk management system tailored for a local government entity in my country. Originally developed using Java and Spring Boot, I made the deliberate choice to rebuild the system entirely. This time, I opted for a technology stack centered around the Next.js framework, complemented by TailwindCSS for styling, PostgreSQL for the database, and the Prisma ORM for enhanced data management.</p>
+                  <p class='opacity-70 mb-2'>For my graduation project, I created a comprehensive risk management system tailored for a local government entity in my country. Originally developed using Java and Spring Boot, I made the deliberate choice to rebuild the system. This time, I opted for a technology stack centered around the Next.js framework, complemented by TailwindCSS for styling, PostgreSQL for the database, and the Prisma ORM for enhanced data management.</p>
                   <p class='opacity-70 mb-2'>By transitioning to this stack, I unlocked the capacity to introduce a lot of new features, all while significantly elevating the overall user and developer experience.</p>
                 </div>
               </Card>
@@ -280,7 +290,7 @@ const App: Component = () => {
                 code='https://github.com/andresgamboaa/goduz'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                  <p class='opacity-70 mb-2'>Intrigued by the inner workings of UI libraries, I embarked on an exploration to create an experimental UI library within a Game Engine, drawing inspiration from the principles of React. While the project is not completed and not recommended for deployment in real-world applications, it successfully operates. The endeavor proved invaluable in enhancing my comprehension of React, particularly through the implementation of a Diffing algorithm.</p>
                 </div>
               </Card>
 
@@ -291,7 +301,7 @@ const App: Component = () => {
                 code='https://github.com/andresgamboaa/my-portfolio-webside'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                  <p class='opacity-70 mb-2'>For this website, I opted to explore Solid.js, a JavaScript library designed for constructing UI interfaces. Solid.js shares a similar philosophy with React but it has better performance. Deployed on Github Pages using Github Actions.</p>
                 </div>
               </Card>
 
@@ -303,7 +313,7 @@ const App: Component = () => {
                 visit='https://desarrollowebcostarica.netlify.app/'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                  <p class='opacity-70 mb-2'>A simple website with some nice animations.</p>
                 </div>
               </Card>
 
@@ -314,7 +324,6 @@ const App: Component = () => {
                 code='https://github.com/andresgamboaa/email-client-ui'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
                 </div>
               </Card>
 
@@ -325,7 +334,6 @@ const App: Component = () => {
                 code='https://github.com/andresgamboaa/angular-tasks'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
                 </div>
               </Card>
 
@@ -337,7 +345,6 @@ const App: Component = () => {
                 visit='https://andresgamboaa.github.io/countdownReactApp/'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
                 </div>
               </Card>
 
@@ -348,7 +355,6 @@ const App: Component = () => {
                 code='https://github.com/andresgamboaa/spaced-repetition-for-chess'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
                 </div>
               </Card>
 
@@ -359,7 +365,7 @@ const App: Component = () => {
                 code='https://github.com/andresgamboaa/discord-clone'
               >
                 <div class='mt-2 mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>"Recli" is a command-line application written in Rust that aids in memorizing and practicing CLI commands.</p>
+                  Discord clone with a real time chat implemented with SignalR.
                 </div>
               </Card>
 
