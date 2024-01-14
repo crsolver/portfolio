@@ -26,7 +26,8 @@ import angularNotes from "./assets/angular_notes.png"
 import chess from "./assets/chess.png"
 import discord1Img from "./assets/discord1.png"
 import discord2Img from "./assets/discord2.png"
-import goduzNotes from "./assets/notesgodoz.png"
+import memorizerImg from "./assets/memorizer.png"
+import memorizerImg2 from "./assets/memorizer2.png"
 import Card from './components/card';
 
 const App: Component = () => {
@@ -282,6 +283,21 @@ const App: Component = () => {
                   </p>
                 </div>
               </Card>
+
+              <Card
+                images={[memorizerImg2, memorizerImg]}
+                title='Text-Memorizer'
+                tags={['TypeScript', 'Solid.js']}
+                code='https://github.com/andresgamboaa/text-memorizer'
+                visit='https://andresgamboaa.github.io/text-memorizer'
+              >
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>
+                    This tool is designed to enhance your ability to memorize various forms of text, such as lines from scripts, poems, speeches, and monologues.
+                  </p>
+                </div>
+              </Card>
+
 
               <Card
                 images={[goduz, 'https://raw.githubusercontent.com/andresgamboaa/goduz-notes/main/images/notes.gif']}
