@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,100;1,9..40,400;1,9..40,500;1,9..40,700&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,100;1,9..40,400;1,9..40,500;1,9..40,700&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
 
 html {
   scrollbar-gutter: stable;
@@ -45,15 +45,16 @@ code {
 .pop {
   transition: 0.1s;
   transform: translateY(5px);
-  &:hover {
-    transform: translateY(1px);
-    box-shadow: 0 4px  rgb(187,181,153);
-  }
-  &:active {
-    transform: translateY(4px);
-    box-shadow: 0 1px  rgb(187,181,153);
-  }
 }
+.pop:hover {
+  transform: translateY(1px);
+  box-shadow: 0 4px  rgb(187,181,153);
+}
+.pop:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px  rgb(187,181,153);
+} 
+
 /* width */
 ::-webkit-scrollbar {
   width: 6px;

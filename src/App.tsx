@@ -28,6 +28,7 @@ import discord1Img from "./assets/discord1.png"
 import discord2Img from "./assets/discord2.png"
 import memorizerImg from "./assets/memorizer.png"
 import memorizerImg2 from "./assets/memorizer2.png"
+import sinpepay1 from "./assets/sinpepayweb1.png"
 import Card from './components/card';
 
 const App: Component = () => {
@@ -214,15 +215,14 @@ const App: Component = () => {
             <h2 class='my-2 text-center font-bold text-2xl opacity-70'>Projects</h2>
             <div class="flex flex-wrap flex-row justify-center w-fulltext-center">
               <Card
-                images={[spCodeImg1, spCodeImg2, spCodeImg3]}
-                title='Spaced Repetition for Code'
-                tags={['React', 'TypeScript', 'Rust', 'Tauri', 'SQLite']}
-                code='https://github.com/andresgamboaa/spaced-repetition-for-code'
+                images={[sinpepay1]}
+                title='Sinpepay'
+                tags={['Astro', 'TypeScript', 'Android']}
+                visit='https://sinpepay.net'
+                code='https://github.com/andresgamboaa/sinpepay'
               >
-                <div class='mb-6 text-left'>
-                  <p class='opacity-70 mb-2'>A desktop application inspired by spaced repetition software like Anki that was designed specifically for coders, it ensures you never forget essential snippets like centering a div or the syntax of a new programming language.</p>
-                  <p class='opacity-70 mb-2'>It includes syntax highlighting for the most popular programing languages, vim keybindings and an algorithm to schedule reviews.</p>
-                  <p class='opacity-70 mb-2'>The application was build with React, Typescript, SQLite and bundled as a Windows application with Tauri, a Rust based alternative to Electron. It's still a work in progress, but I use it every day.</p>
+                <div class='mt-2 mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>Herramienta (Web y Aplicación Android) para facilitar transacciones de SINPE Móvil (Costa Rica) vía SMS.</p>
                 </div>
               </Card>
 
@@ -237,6 +237,20 @@ const App: Component = () => {
                   <p class='opacity-70 mb-2'>By transitioning to this stack, I unlocked the capacity to introduce a lot of new features, all while significantly elevating the overall user and developer experience.</p>
                 </div>
               </Card>
+
+              <Card
+                images={[spCodeImg1, spCodeImg2, spCodeImg3]}
+                title='Spaced Repetition for Code'
+                tags={['React', 'TypeScript', 'Rust', 'Tauri', 'SQLite']}
+                code='https://github.com/andresgamboaa/spaced-repetition-for-code'
+              >
+                <div class='mb-6 text-left'>
+                  <p class='opacity-70 mb-2'>A desktop application inspired by spaced repetition software like Anki that was designed specifically for coders, it ensures you never forget essential snippets like centering a div or the syntax of a new programming language.</p>
+                  <p class='opacity-70 mb-2'>It includes syntax highlighting for the most popular programing languages, vim keybindings and an algorithm to schedule reviews.</p>
+                  <p class='opacity-70 mb-2'>The application was build with React, Typescript, SQLite and bundled as a Windows application with Tauri, a Rust based alternative to Electron. It's still a work in progress, but I use it every day.</p>
+                </div>
+              </Card>
+
 
               <Card
                 images={[anki1, anki2]}
@@ -330,37 +344,6 @@ const App: Component = () => {
               >
                 <div class='mt-2 mb-6 text-left'>
                   <p class='opacity-70 mb-2'>A simple website with some nice animations.</p>
-                </div>
-              </Card>
-
-              <Card
-                images={[angularEmail]}
-                title='Email Client UI'
-                tags={['Angular', 'NgRx']}
-                code='https://github.com/andresgamboaa/email-client-ui'
-              >
-                <div class='mt-2 mb-6 text-left'>
-                </div>
-              </Card>
-
-              <Card
-                images={[angularNotes]}
-                title='Angular Tasks'
-                tags={['Angular']}
-                code='https://github.com/andresgamboaa/angular-tasks'
-              >
-                <div class='mt-2 mb-6 text-left'>
-                </div>
-              </Card>
-
-              <Card
-                images={[reactCountdown]}
-                title='Email Client UI'
-                tags={['TypeScript', 'Solid.js']}
-                code='https://github.com/andresgamboaa/countdownReactApp'
-                visit='https://andresgamboaa.github.io/countdownReactApp/'
-              >
-                <div class='mt-2 mb-6 text-left'>
                 </div>
               </Card>
 
