@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,100;1,9..40,400;1,9..40,500;1,9..40,700&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(21, 25, 32);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1c1f2b;
+background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg-custom {
+  background-color: rgb(33, 38, 48);
+}
+
+#effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--x) var(--y),rgba(28, 35, 44, 0.73) 30%,   rgba(24, 29, 37, 0.898) 60%);
+  z-index: -1;
+}
+
+.pop {
+  transition: 0.1s;
+  transform: translateY(5px);
+}
+.pop:hover {
+  transform: translateY(1px);
+  box-shadow: 0 4px  rgb(187,181,153);
+}
+.pop:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px  rgb(187,181,153);
+} 
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(21, 25, 32, 0);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(184,178,150); 
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(184,178,150); 
+}
